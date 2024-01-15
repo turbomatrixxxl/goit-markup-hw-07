@@ -1,2 +1,3 @@
 # goit-markup-hw-04
-Al patrulea proiect individual
+Al saptelea proiect individual
+Machetare adaptive si responsive for mobiles, tablets and desktops
