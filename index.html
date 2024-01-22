@@ -31,50 +31,129 @@
       <!-- Header -->
       <header class="header">
         <div class="header-container container">
-          <!-- Navigation  -->
-          <nav class="header-nav">
+          <!-- mobile logo and menu button container -->
+          <div class="logo-and-hamburger-button-container">
             <!-- Logo link cu text-->
             <a class="nav-logo link" href="./index.html"
               >Web<span class="nav-logo-span-studio">Studio</span></a
             >
-            <!-- Menu nav -->
-            <ul class="list header-nav-list">
-              <li>
-                <a class="nav-list-studio link active" href="./index.html"
-                  >Studio</a
+
+            <!-- Hamburger menu button -->
+            <button class="header-hamburger-button" js-open-menu>
+              <svg width="32" height="22">
+                <use href="./images/icons.svg#icon-hamburger"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="mobile-navbar-menu is-open" js-menu-container>
+            <!-- Mobile menu close buttom -->
+            <button
+              class="close-modal-button close-mobile-menu-button"
+              type="button"
+              js-close-menu
+            >
+              <svg
+                class="modal-svg-close-button-container"
+                width="8"
+                height="8"
+              >
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+
+            <!-- Navigation  -->
+            <nav class="header-nav">
+              <!-- Menu nav -->
+              <ul class="list header-nav-list">
+                <li>
+                  <a class="nav-list-studio link active" href="./index.html"
+                    >Studio</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-list-studio link" href="./portfolio.html"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a class="nav-list-studio link" href="">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- Address -->
+            <address class="contacts-address-lists">
+              <ul class="list header-address-list">
+                <li class="mobile-address-list-item">
+                  <a
+                    class="address-list link address-list-mobile-mail"
+                    href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="mobile-address-list-item">
+                  <a
+                    class="address-list link address-list-mobile-number"
+                    href="tel:+110001111111"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+              </ul>
+            </address>
+
+            <!-- Social-media links -->
+            <ul
+              class="studio-third-section-social-media-list mobile-social-list"
+            >
+              <li
+                class="studio-third-section-social-media-list-item mobile-social-list-item"
+              >
+                <a
+                  class="studio-third-section-social-media-list-item-link"
+                  href=""
                 >
+                  <svg class="social-media-links" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="nav-list-studio link" href="./portfolio.html"
-                  >Portfolio</a
+              <li
+                class="studio-third-section-social-media-list-item mobile-social-list-item"
+              >
+                <a
+                  class="studio-third-section-social-media-list-item-link"
+                  href=""
                 >
+                  <svg class="social-media-links" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="nav-list-studio link" href="">Contacts</a>
+              <li
+                class="studio-third-section-social-media-list-item mobile-social-list-item"
+              >
+                <a
+                  class="studio-third-section-social-media-list-item-link"
+                  href=""
+                >
+                  <svg class="social-media-links" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li
+                class="studio-third-section-social-media-list-item mobile-social-list-item"
+              >
+                <a
+                  class="studio-third-section-social-media-list-item-link"
+                  href=""
+                >
+                  <svg class="social-media-links" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </nav>
-          <!-- Adress -->
-          <address class="contacts-address-lists">
-            <ul class="list header-address-list">
-              <li>
-                <a class="address-list link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li>
-                <a class="address-list link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
-              </li>
-            </ul>
-          </address>
-          <!-- Hamburger menu button -->
-          <button class="header-hamburger-button">
-            <svg width="32" height="22">
-              <use href="./images/icons.svg#icon-hamburger"></use>
-            </svg>
-          </button>
+          </div>
         </div>
       </header>
       <!-- Main -->
@@ -163,13 +242,34 @@
             <!-- Images section -->
             <ul class="list studio-second-section-list">
               <li class="studio-second-section-list-item">
-                <img src="./images/monitor.jpg" alt="Monitor" width="360" />
+                <img
+                  srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
+                  src="./images/monitor.jpg"
+                  alt="Monitor"
+                  width="360px"
+                  height="300px"
+                />
               </li>
               <li class="studio-second-section-list-item">
-                <img src="./images/pages.jpg" alt="Pages" width="360" />
+                <img
+                  srcset="./images/pages.jpg 1x, ./images/pages@2x.jpg 2x"
+                  src="./images/pages.jpg"
+                  alt="Pages"
+                  width="360px"
+                  height="300px"
+                />
               </li>
               <li class="studio-second-section-list-item">
-                <img src="./images/associate.jpg" alt="Associate" width="360" />
+                <img
+                  srcset="
+                    ./images/associate.jpg    1x,
+                    ./images/associate@2x.jpg 2x
+                  "
+                  src="./images/associate.jpg"
+                  alt="Associate"
+                  width="360px"
+                  height="300px"
+                />
               </li>
             </ul>
           </div>
@@ -184,7 +284,12 @@
               <!-- Card 1 -->
               <li class="studio-third-section-list-item">
                 <!-- Photo Card 1 -->
-                <img src="./images/card1.jpg" alt="Mark Guerrero" />
+                <img
+                  srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x"
+                  src="./images/card1.jpg"
+                  alt="Mark Guerrero"
+                  width="264px"
+                />
                 <!-- div name occupation -->
                 <div class="name-occupation">
                   <!-- Name of photo Card 1 -->
@@ -242,7 +347,12 @@
               <!-- Card 2 -->
               <li class="studio-third-section-list-item">
                 <!-- Photo Card 2 -->
-                <img src="./images/card2.jpg" alt="Tom Ford" />
+                <img
+                  srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x"
+                  src="./images/card2.jpg"
+                  alt="Tom Ford"
+                  width="264px"
+                />
                 <!-- div name occupation -->
                 <div class="name-occupation">
                   <!-- Name of photo Card 2 -->
@@ -298,7 +408,12 @@
               <!-- Card 3 -->
               <li class="studio-third-section-list-item">
                 <!-- Photo Card 3 -->
-                <img src="./images/card3.jpg" alt="Camila Garcia" />
+                <img
+                  srcset="./images/card3.jpg 1x, ./images/card3@2x.jpg 2x"
+                  src="./images/card3.jpg"
+                  alt="Camila Garcia"
+                  width="264px"
+                />
                 <!-- div name occupation -->
                 <div class="name-occupation">
                   <!-- Name of photo Card 3 -->
@@ -354,7 +469,12 @@
               <!-- Card 4 -->
               <li class="studio-third-section-list-item">
                 <!-- Photo Card 4 -->
-                <img src="./images/card4.jpg" alt="Daniel Wilson" />
+                <img
+                  srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x"
+                  src="./images/card4.jpg"
+                  alt="Daniel Wilson"
+                  width="264px"
+                />
                 <!-- div name occupation -->
                 <div class="name-occupation">
                   <!-- Name of photo Card 4 -->
@@ -632,5 +752,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

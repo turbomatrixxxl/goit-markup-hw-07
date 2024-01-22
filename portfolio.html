@@ -26,45 +26,122 @@
 
   <!-- Body section -->
   <body>
-    <!-- Header section -->
+    <!-- Header -->
     <header class="header">
-      <div class="header-div container">
-        <!-- Navigation  -->
-        <nav class="header-nav">
+      <div class="header-container container">
+        <!-- mobile logo and menu button container -->
+        <div class="logo-and-hamburger-button-container">
           <!-- Logo link cu text-->
           <a class="nav-logo link" href="./index.html"
             >Web<span class="nav-logo-span-studio">Studio</span></a
           >
-          <!-- Menu nav -->
-          <ul class="list header-nav-list">
-            <li>
-              <a class="nav-list-studio link" href="./index.html">Studio</a>
-            </li>
-            <li>
-              <a class="nav-list-studio link active" href="./portfolio.html"
-                >Portfolio</a
+
+          <!-- Hamburger menu button -->
+          <button class="header-hamburger-button" js-open-menu>
+            <svg width="32" height="22">
+              <use href="./images/icons.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-navbar-menu is-open" js-menu-container>
+          <!-- Mobile menu close buttom -->
+          <button
+            class="close-modal-button close-mobile-menu-button"
+            type="button"
+            js-close-menu
+          >
+            <svg class="modal-svg-close-button-container" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <!-- Navigation  -->
+          <nav class="header-nav">
+            <!-- Menu nav -->
+            <ul class="list header-nav-list">
+              <li>
+                <a class="nav-list-studio link active" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-studio link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a class="nav-list-studio link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Address -->
+          <address class="contacts-address-lists">
+            <ul class="list header-address-list mobile-address-list-item">
+              <li class="mobile-address-list-item">
+                <a class="address-list link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-address-list-item">
+                <a class="address-list link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <!-- Social-media links -->
+          <ul class="studio-third-section-social-media-list mobile-social-list">
+            <li
+              class="studio-third-section-social-media-list-item mobile-social-list-item"
+            >
+              <a
+                class="studio-third-section-social-media-list-item-link"
+                href=""
               >
+                <svg class="social-media-links" width="16" height="16">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li>
-              <a class="nav-list-studio link" href="">Contacts</a>
+            <li
+              class="studio-third-section-social-media-list-item mobile-social-list-item"
+            >
+              <a
+                class="studio-third-section-social-media-list-item-link"
+                href=""
+              >
+                <svg class="social-media-links" width="16" height="16">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li
+              class="studio-third-section-social-media-list-item mobile-social-list-item"
+            >
+              <a
+                class="studio-third-section-social-media-list-item-link"
+                href=""
+              >
+                <svg class="social-media-links" width="16" height="16">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li
+              class="studio-third-section-social-media-list-item mobile-social-list-item"
+            >
+              <a
+                class="studio-third-section-social-media-list-item-link"
+                href=""
+              >
+                <svg class="social-media-links" width="16" height="16">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <!-- Address -->
-        <address class="contacts-address-lists">
-          <ul class="list">
-            <li>
-              <a class="address-list link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="address-list link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
+        </div>
       </div>
     </header>
 
