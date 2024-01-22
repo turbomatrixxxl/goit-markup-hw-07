@@ -1,6 +1,14 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 
+<symbol id="icon-hamburger" viewBox="0 0 47 32">
+<path fill="#e5e5e5" style="fill: var(--color1, #e5e5e5)" d="M0 0h46.545v32h-46.545v-32z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M-552.727-34.909h622.545v7211.636h-622.545v-7211.636z"></path>
+<path fill="#fff" style="fill: var(--color2, #fff)" d="M-552.727-34.909h622.545v101.818h-622.545v-101.818z"></path>
+<path fill="none" stroke="#e7e9fc" style="stroke: var(--color3, #e7e9fc)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.4545" d="M-552-34.182h621.091v100.364h-621.091v-100.364z"></path>
+<path fill="none" stroke="#2e2f42" style="stroke: var(--color4, #2e2f42)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" d="M1.961 29.154h42.965M1.961 15.615h42.965M1.961 2.077h42.965"></path>
+</symbol>
+
 <symbol id="icon-click" viewBox="0 0 32 32">
 <path d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
 <path fill="none" stroke="#404bbf" style="stroke: var(--color1, #404bbf)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z"></path>
