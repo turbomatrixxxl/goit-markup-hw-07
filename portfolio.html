@@ -37,18 +37,17 @@
           >
 
           <!-- Hamburger menu button -->
-          <button class="header-hamburger-button" js-open-menu>
+          <button class="header-hamburger-button js-open-menu">
             <svg width="32" height="22">
               <use href="./images/icons.svg#icon-hamburger"></use>
             </svg>
           </button>
         </div>
-        <div class="mobile-navbar-menu is-open" js-menu-container>
+        <div class="mobile-navbar-menu is-open js-menu-container">
           <!-- Mobile menu close buttom -->
           <button
-            class="close-modal-button close-mobile-menu-button"
+            class="close-modal-button close-mobile-menu-button js-close-menu"
             type="button"
-            js-close-menu
           >
             <svg class="modal-svg-close-button-container" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
@@ -60,12 +59,10 @@
             <!-- Menu nav -->
             <ul class="list header-nav-list">
               <li>
-                <a class="nav-list-studio link active" href="./index.html"
-                  >Studio</a
-                >
+                <a class="nav-list-studio link" href="./index.html">Studio</a>
               </li>
               <li>
-                <a class="nav-list-studio link" href="./portfolio.html"
+                <a class="nav-list-studio link active" href="./portfolio.html"
                   >Portfolio</a
                 >
               </li>
@@ -76,14 +73,18 @@
           </nav>
           <!-- Address -->
           <address class="contacts-address-lists">
-            <ul class="list header-address-list mobile-address-list-item">
+            <ul class="list header-address-list">
               <li class="mobile-address-list-item">
-                <a class="address-list link" href="mailto:info@devstudio.com"
+                <a
+                  class="address-list link address-list-mobile-mail"
+                  href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
               <li class="mobile-address-list-item">
-                <a class="address-list link" href="tel:+110001111111"
+                <a
+                  class="address-list link address-list-mobile-number"
+                  href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
               </li>
@@ -502,4 +503,5 @@
       </div>
     </footer>
   </body>
+  <script src="./js/mobile-menu.js"></script>
 </html>
